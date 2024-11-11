@@ -30,7 +30,7 @@ class OrdersVC: UIViewController {
 extension OrdersVC{
     
     func initUI(tv: UITableView){
-        tv.configure(delegate: self, dataSource: self, cellType: OrdersCell.self, cellIdentifier: "OrdersCell")
+        tv.configureTableView(delegate: self, dataSource: self, cellType: OrdersCell.self, cellIdentifier: "OrdersCell")
         
     }
     
@@ -63,4 +63,6 @@ extension OrdersVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 104
     }
+    
 }
+             

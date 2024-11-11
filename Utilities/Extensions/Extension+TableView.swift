@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UITableView {
-    func configure<T: UITableViewCell>(delegate:UITableViewDelegate , dataSource: UITableViewDataSource , cellType: T.Type , cellIdentifier: String) {
+    func configureTableView<T: UITableViewCell>(delegate:UITableViewDelegate , dataSource: UITableViewDataSource , cellType: T.Type , cellIdentifier: String) {
         self.delegate = delegate
         self.dataSource = dataSource
         self.register(UINib(nibName: String(describing: cellType), bundle: nil), forCellReuseIdentifier: cellIdentifier)

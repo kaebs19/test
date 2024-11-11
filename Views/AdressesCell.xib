@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="151" id="KGk-i7-Jjw" customClass="AdressesCell" customModule="test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="495" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="495" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9KD-G3-XJS">
+                        <rect key="frame" x="32" y="5" width="178" height="46.666666666666664"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsa-Ea-4qi">
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kuwait, Hawally , Bayan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-wj-h3V">
+                                <rect key="frame" x="0.0" y="26.333333333333336" width="178" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="56q-cs-WfE">
+                        <rect key="frame" x="372.33333333333331" y="5" width="102.66666666666669" height="134"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-ms-hPx">
+                                <rect key="frame" x="9.6666666666666856" y="0.0" width="83.333333333333329" height="20.333333333333332"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmJ-kc-voz">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="fbY-xT-O0t">
+                                        <rect key="frame" x="63.000000000000007" y="0.0" width="20.333333333333336" height="20.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fbY-xT-O0t" secondAttribute="height" multiplier="1:1" id="DqH-v4-6uX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7f-Ns-Qh5">
+                                <rect key="frame" x="0.0" y="31.333333333333336" width="102.66666666666667" height="102.66666666666666"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="p7f-Ns-Qh5" secondAttribute="height" multiplier="1:1" id="fKe-ur-Jdi"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="edit"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9KD-G3-XJS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="G9e-hM-jKg"/>
+                    <constraint firstAttribute="bottom" secondItem="56q-cs-WfE" secondAttribute="bottom" constant="12" id="GOu-EN-mdN"/>
+                    <constraint firstItem="9KD-G3-XJS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="N4l-rE-acQ"/>
+                    <constraint firstAttribute="trailing" secondItem="56q-cs-WfE" secondAttribute="trailing" constant="20" id="mBd-3k-Ah7"/>
+                    <constraint firstItem="56q-cs-WfE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="pZl-vt-YSu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="196.18320610687022" y="78.521126760563391"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="16.333333969116211" height="16.333333969116211"/>
+        <image name="select" width="17" height="17"/>
+    </resources>
+</document>
