@@ -17,6 +17,8 @@ enum Colors: String {
     case C0079FB_Blue = "#0079FB"
     case C58595B_LightGray = "#58595B"
     case CD9D9D9_DarkGray = "#D9D9D9"
+    case C505050_DarkGray = "#505050"
+    case CBFBFBF_LightGray = "#CBFBFBF"
     
     var uiColor: UIColor? {
         UIColor(hex: self.rawValue)

@@ -30,7 +30,7 @@ class OrdersVC: UIViewController {
 extension OrdersVC{
     
     func initUI(tv: UITableView){
-        tv.configureTableView(delegate: self, dataSource: self, cellType: OrdersCell.self, cellIdentifier: "OrdersCell")
+        tv.configureTableView(delegate: self, dataSource: self, cellType: OrdersCell.self, cellIdentifier: "OrdersCell", typeSeparator: .none )
         
     }
     
