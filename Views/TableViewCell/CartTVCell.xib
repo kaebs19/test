@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="249" id="KGk-i7-Jjw" customClass="CartTVCell" customModule="test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="583" height="249"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="583" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDj-30-MkB">
+                        <rect key="frame" x="0.0" y="0.0" width="583" height="249"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_1" translatesAutoresizingMaskIntoConstraints="NO" id="gkN-R5-7hT">
+                                <rect key="frame" x="23" y="59.666666666666671" width="129.66666666666666" height="129.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gkN-R5-7hT" secondAttribute="height" multiplier="1:1" id="dh8-bu-l5O"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nCb-1L-Knc">
+                                <rect key="frame" x="164.66666666666663" y="91.666666666666671" width="275" height="66.000000000000014"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnc-1Y-KJD">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="40.666666666666664"/>
+                                        <string key="text">Egyption Medical 
+Headsets</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.34 kwd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Op-a4-K8i">
+                                        <rect key="frame" x="0.0" y="45.666666666666671" width="275" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Uj7-bF-Fu0">
+                                <rect key="frame" x="444.66666666666669" y="197" width="115.33333333333331" height="39"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwx-Al-hJf">
+                                        <rect key="frame" x="0.0" y="0.0" width="38.666666666666664" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Zwx-Al-hJf" secondAttribute="height" multiplier="1:1" id="dtu-6k-Iq1"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="minus"/>
+                                        <connections>
+                                            <action selector="minusButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wH0-Cb-7y1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFJ-Xf-Nc5">
+                                        <rect key="frame" x="53.666666666666629" y="0.0" width="7.6666666666666643" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D44-i5-cRr">
+                                        <rect key="frame" x="76.333333333333314" y="0.0" width="39" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="D44-i5-cRr" secondAttribute="height" multiplier="1:1" id="gNu-eN-QSV"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="plus"/>
+                                        <connections>
+                                            <action selector="plusButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aJ0-xe-3nS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utx-1B-K3z">
+                                <rect key="frame" x="544" y="18" width="14" height="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="removeButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="w4e-GV-oMM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="utx-1B-K3z" firstAttribute="top" secondItem="CDj-30-MkB" secondAttribute="top" constant="18" id="38A-IT-iPT"/>
+                            <constraint firstAttribute="trailing" secondItem="Uj7-bF-Fu0" secondAttribute="trailing" constant="23" id="3ax-DM-Efd"/>
+                            <constraint firstAttribute="trailing" secondItem="utx-1B-K3z" secondAttribute="trailing" constant="25" id="Bki-Ve-bYm"/>
+                            <constraint firstAttribute="bottom" secondItem="Uj7-bF-Fu0" secondAttribute="bottom" constant="13" id="Hre-sz-38c"/>
+                            <constraint firstItem="gkN-R5-7hT" firstAttribute="centerY" secondItem="CDj-30-MkB" secondAttribute="centerY" id="NZy-ix-D6Q"/>
+                            <constraint firstItem="gkN-R5-7hT" firstAttribute="leading" secondItem="CDj-30-MkB" secondAttribute="leading" constant="23" id="c2k-Vc-dvf"/>
+                            <constraint firstItem="nCb-1L-Knc" firstAttribute="leading" secondItem="gkN-R5-7hT" secondAttribute="trailing" constant="12" id="sPh-MF-7ra"/>
+                            <constraint firstItem="Uj7-bF-Fu0" firstAttribute="leading" secondItem="nCb-1L-Knc" secondAttribute="trailing" constant="5" id="vld-li-Giy"/>
+                            <constraint firstItem="nCb-1L-Knc" firstAttribute="centerY" secondItem="CDj-30-MkB" secondAttribute="centerY" id="zaf-fW-JcL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CDj-30-MkB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3my-o7-xqw"/>
+                    <constraint firstAttribute="trailing" secondItem="CDj-30-MkB" secondAttribute="trailing" id="GIm-5X-HIb"/>
+                    <constraint firstAttribute="bottom" secondItem="CDj-30-MkB" secondAttribute="bottom" id="ISI-0o-spw"/>
+                    <constraint firstItem="CDj-30-MkB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tbc-YP-lq4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="D44-i5-cRr" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.0666667" id="XwZ-1U-WOZ"/>
+                <constraint firstItem="gkN-R5-7hT" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.222222" id="dkd-pl-KdJ"/>
+                <constraint firstItem="Zwx-Al-hJf" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.0666667" id="utD-mc-8I2"/>
+            </constraints>
+            <connections>
+                <outlet property="productImage" destination="gkN-R5-7hT" id="5i6-Qt-KIA"/>
+                <outlet property="productName" destination="cnc-1Y-KJD" id="GMX-Hr-pLF"/>
+                <outlet property="productNumber" destination="eFJ-Xf-Nc5" id="4aQ-JC-1td"/>
+                <outlet property="productPrice" destination="5Op-a4-K8i" id="oIG-Ht-j8S"/>
+            </connections>
+            <point key="canvasLocation" x="275.57251908396944" y="60.211267605633807"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close" width="14" height="14"/>
+        <image name="minus" width="42" height="42"/>
+        <image name="plus" width="42" height="42"/>
+        <image name="product_1" width="80" height="80"/>
+    </resources>
+</document>

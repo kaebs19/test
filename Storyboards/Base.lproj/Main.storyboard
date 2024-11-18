@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j19-LR-eaM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ujR-Sd-7EW">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -124,6 +124,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UHY-w5-7wU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1707" y="-8"/>
+        </scene>
+        <!--CartVC-->
+        <scene sceneID="Tpw-HC-kdZ">
+            <objects>
+                <viewController storyboardIdentifier="CartVC" id="ujR-Sd-7EW" customClass="CartVC" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TXy-Ve-MYX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SET-T9-KGc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fnq-Rm-lMX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fnq-Rm-lMX" firstAttribute="bottom" secondItem="SET-T9-KGc" secondAttribute="bottom" id="bSs-7K-Mai"/>
+                            <constraint firstItem="SET-T9-KGc" firstAttribute="top" secondItem="fnq-Rm-lMX" secondAttribute="top" id="fvD-kZ-7VD"/>
+                            <constraint firstItem="SET-T9-KGc" firstAttribute="leading" secondItem="fnq-Rm-lMX" secondAttribute="leading" id="mWS-b3-x7i"/>
+                            <constraint firstItem="fnq-Rm-lMX" firstAttribute="trailing" secondItem="SET-T9-KGc" secondAttribute="trailing" id="mup-Ph-iZ6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cartTV" destination="SET-T9-KGc" id="U4P-dI-rfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9n-lZ-eA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="-8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AbD-eC-RTq">

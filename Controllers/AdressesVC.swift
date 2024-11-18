@@ -36,7 +36,7 @@ extension AdressesVC{
     }
     
     func initTV(tv: UITableView) {
-        tv.configureTableView(delegate: self, dataSource: self, cellType: AdressesCell.self, cellIdentifier: "AdressesCell", typeSeparator: .singleLine , separatorInset: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+        tv.configureTableView(delegate: self, dataSource: self, cellType: AdressesCell.self, cellIdentifier: .AdressesCell, typeSeparator: .singleLine , separatorInset: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
     }
     
 }

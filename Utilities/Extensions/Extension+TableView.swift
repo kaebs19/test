@@ -10,10 +10,12 @@ import UIKit
 
 extension UITableView {
     
-    func configureTableView<T: UITableViewCell>(delegate:UITableViewDelegate , dataSource: UITableViewDataSource , cellType: T.Type , cellIdentifier: String , typeSeparator: StyleSeparator , separatorInset: UIEdgeInsets = .zero) {
+    func configureTableView<T: UITableViewCell>(delegate:UITableViewDelegate ,
+                                                dataSource: UITableViewDataSource
+                                                , cellType: T.Type , cellIdentifier: TVCells , typeSeparator: StyleSeparator , separatorInset: UIEdgeInsets = .zero) {
         self.delegate = delegate
         self.dataSource = dataSource
-        self.register(UINib(nibName: String(describing: cellType), bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        self.register(UINib(nibName: String(describing: cellType), bundle: nil), forCellReuseIdentifier: cellIdentifier.rawValue)
         self.separatorStyle =  typeSeparator.separtorStyle
         self.separatorInset = separatorInset
         self.reloadData()
