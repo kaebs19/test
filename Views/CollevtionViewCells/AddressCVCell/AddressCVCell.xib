@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddressCVCell" customModule="test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUL-tQ-cbf">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="183"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-Mz-mDa">
+                                <rect key="frame" x="10" y="13" width="168" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My work address " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwb-hZ-FRr">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="54.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bH-08-tnc">
+                                        <rect key="frame" x="0.0" y="58.333333333333321" width="168" height="101.66666666666669"/>
+                                        <string key="text">Kuwait, Sharq, Jaber Mubarak St., Shrouq 
+tower third floor…</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ldV-Mz-mDa" firstAttribute="top" secondItem="SUL-tQ-cbf" secondAttribute="top" constant="13" id="HH5-Xd-I9c"/>
+                            <constraint firstItem="ldV-Mz-mDa" firstAttribute="leading" secondItem="SUL-tQ-cbf" secondAttribute="leading" constant="10" id="QJG-qf-6Dp"/>
+                            <constraint firstAttribute="trailing" secondItem="ldV-Mz-mDa" secondAttribute="trailing" constant="10" id="UY8-82-XM4"/>
+                            <constraint firstAttribute="bottom" secondItem="ldV-Mz-mDa" secondAttribute="bottom" constant="10" id="w1I-bO-vR1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SUL-tQ-cbf" secondAttribute="bottom" id="6sq-uK-3hG"/>
+                <constraint firstItem="SUL-tQ-cbf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="76X-bh-Jv5"/>
+                <constraint firstItem="SUL-tQ-cbf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nxQ-wf-R5Y"/>
+                <constraint firstAttribute="trailing" secondItem="SUL-tQ-cbf" secondAttribute="trailing" id="pnu-fc-YE1"/>
+            </constraints>
+            <size key="customSize" width="188" height="183"/>
+            <connections>
+                <outlet property="mainView" destination="SUL-tQ-cbf" id="fxO-lo-row"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="65.845070422535215"/>
+        </collectionViewCell>
+    </objects>
+</document>
